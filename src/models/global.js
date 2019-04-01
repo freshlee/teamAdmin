@@ -1,4 +1,5 @@
 import { queryNotices } from '@/services/user';
+import {queryTestData,queryPostTestData} from '@/services/test'
 
 export default {
   namespace: 'global',
@@ -6,9 +7,20 @@ export default {
   state: {
     collapsed: false,
     notices: [],
+    testData:[],
   },
 
   effects: {
+    *fetchTestData({ payload }, { call, put }) {
+      //call 执行异步函数  put 发出一个action
+      const data = yield call(queryTestData);
+      console.log("data",data)
+    },
+    *fetchPostTestData({ payload }, { call, put }) {
+      //call 执行异步函数  put 发出一个action
+      const data = yield call(queryPostTestData,payload);
+      console.log("data",data)
+    },
     *fetchNotices(_, { call, put, select }) {
       const data = yield call(queryNotices);
       yield put({
