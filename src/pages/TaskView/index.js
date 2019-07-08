@@ -19,25 +19,25 @@ function daysToMilliseconds(days) {
   const rows = [
     [
       "Research",
-      "Find sources",
+      "知识库开发",
       new Date(2015, 0, 1),
       new Date(2015, 0, 5),
       null,
-      100,
+      20,
       null
     ],
     [
       "Write",
-      "Write paper",
+      "搭建架构",
       null,
       new Date(2015, 0, 9),
-      daysToMilliseconds(3),
+      daysToMilliseconds(2),
       25,
       "Research,Outline"
     ],
     [
       "Cite",
-      "Create bibliography",
+      "运行分析",
       null,
       new Date(2015, 0, 7),
       daysToMilliseconds(1),
@@ -46,7 +46,7 @@ function daysToMilliseconds(days) {
     ],
     [
       "Complete",
-      "Hand in paper",
+      "自测",
       null,
       new Date(2015, 0, 10),
       daysToMilliseconds(1),
@@ -55,7 +55,7 @@ function daysToMilliseconds(days) {
     ],
     [
       "Outline",
-      "Outline paper",
+      "开发",
       null,
       new Date(2015, 0, 6),
       daysToMilliseconds(1),

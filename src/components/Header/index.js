@@ -9,8 +9,7 @@ class BaseLayout extends Component {
     render() {
         return (
             <div className={classnames(styles.header)}>
-              这里是顶部导航栏
-              
+                fontEnd
             </div>
         ) 
     }
